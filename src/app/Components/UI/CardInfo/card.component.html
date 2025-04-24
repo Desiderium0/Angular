@@ -1,0 +1,42 @@
+<div class="block-info">
+    <div>
+        <form
+            [formGroup]="form"
+            (ngSubmit)="onSubmit()">
+            <div>
+                <div class="user-id">
+                    <p class="p-id">{{user.id}}</p>
+                </div>
+                
+                <div class="info">
+                    <img class="pers" src="{{user.avatar}}" alt="ava">
+                    <input formControlName="avatar" type="text" placeholder="Ссылка на изображение">
+
+                    <h2 class="pers">Имя: {{user.first_name}}</h2>
+                    <input formControlName="first_name" type="text" placeholder="Имя">
+
+                    <h2 class="pers">Фамилия: {{user.last_name}}</h2>
+                    <input formControlName="last_name" type="text" placeholder="Фамилия">
+                    
+                    <h2 class="pers">Почта: {{user.email}}</h2>
+                    <input formControlName="email" type="text" placeholder="Почта">
+                </div>
+            </div>
+            <div class="buttons">
+                <div class="btn">
+                    <button class="btn-save"
+                        type="submit">
+                        Сохранить
+                    </button>
+                </div>
+                <div class="btn">
+                    <button class="btn-delete"
+                        type="button"
+                        (click)="handleDelete()">
+                        Удалить
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

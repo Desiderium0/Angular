@@ -1,0 +1,13 @@
+<div>
+    <first-block 
+        *ngFor="let userData of user"
+        [user]="userData">
+    </first-block>
+</div>
+
+<div>
+    <second-block
+        *ngFor="let recourceData of resource"
+        [resource]="recourceData">
+    </second-block>
+</div>

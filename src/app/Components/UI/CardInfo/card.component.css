@@ -1,0 +1,68 @@
+.block-info {
+    width: auto;
+    height: auto;
+    background-color: rgba(205, 205, 205, 0.48);
+    margin: 50px;
+    border-radius: 20px;
+}
+
+.p-id {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.pers {
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.btn-save {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(0, 101, 233);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s linear;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-save:hover {
+    background-color: rgb(0, 86, 199);
+}
+
+.btn-delete {
+    width: 150px;
+    height: 40px;
+    background-color: rgb(246, 0, 0);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    transition: background-color 0.3s linear;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-delete:hover {
+    background-color: rgb(215, 0, 0);
+}
+
+input {
+    display: block;
+    margin-left: 20px;
+    border: none;
+    width: 200px;
+    height: 30px;
+    padding-left: 8px;
+    background-color: rgba(246, 246, 246, 0.825);
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+}

@@ -1,0 +1,63 @@
+.container {
+    width: 200px;
+    height: 400px;
+    box-shadow: 0px 5px 3px gray,
+                0px -1px 3px gray;
+    margin: 30px;
+    display: inline-block;
+}
+
+.img-center {
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    height: 130px;
+    width: 130px;
+}
+
+h3 {
+    text-align: center;
+}
+
+.p-id {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+.p-email {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    background-color: #e5e5e5;
+    display: flex;
+    margin: auto;
+    transition: background-color 0.5s linear;
+    padding: 3px 5px 3px 5px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.background-green {
+    background-color: green;
+}
+
+.background-orange {
+    background-color: orange;
+}
+
+.btn-view {
+    margin: 10px;
+}
+
+.btn-center {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}

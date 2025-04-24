@@ -1,0 +1,31 @@
+<div class="container" >
+    <div>
+        <p class="p-id">{{user.id}}</p>
+        <img class="img-center" src={{user.avatar}} alt="">
+        <h3 class="">{{user.first_name}}</h3>
+    </div>
+   
+    <div>
+        <div class="btn-center">
+            <button
+            [ngClass]="{
+                'background-green': details,
+                'background-orange': !details
+            }"
+            (click)="details = !details">
+                {{details ? "Hide" : "Show"}} details
+            </button>
+        </div>
+        <div class="btn-center">
+            <button
+                [routerLink]="['/user', user.id]">
+                View
+            </button>
+        </div>
+    </div>
+    
+
+    <div *ngIf="details">
+        <p class="p-email">{{user.email}}</p>
+    </div>
+</div>
