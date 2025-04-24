@@ -6,10 +6,10 @@
 
 ## Development server
 
-To start a local development server, run:
+Для запуска локального сервера используется команда:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+После запуска сервера, откройте ваш браузер и перейдите на `http://localhost:4200/`.
