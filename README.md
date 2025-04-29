@@ -6,6 +6,10 @@
 
 ## Development server
 
+```bash
+npm install
+```
+
 Для запуска локального сервера используется команда:
 
 ```bash
