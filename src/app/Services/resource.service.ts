@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { IApiResponse } from "../Models/Resource";
@@ -11,6 +11,7 @@ export class ResourceService {
     constructor(private http: HttpClient) { }
   
     getResources(): Observable<IApiResponse> {
-      return this.http.get<IApiResponse>("https://reqres.in/api/unknown")
+      const headers = new HttpHeaders({ 'x-api-key': 'reqres-free-v1'});
+      return this.http.get<IApiResponse>("https://reqres.in/api/unknown", { headers })
     }
 }
